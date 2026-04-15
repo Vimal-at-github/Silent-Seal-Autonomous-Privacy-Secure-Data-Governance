@@ -1,0 +1,2 @@
+# Silent-Seal-Autonomous-Privacy-Secure-Data-Governance
+Built an application to scan and detect sensitive data. Used pattern matching techniques (regex) for accurate detection of emails, phone numbers, Aadhaar, and PAN. Implemented data redaction (masking sensitive information) and file encryption for secure sharing. Designed a simple interface to display risk levels and detected sensitive data types.
