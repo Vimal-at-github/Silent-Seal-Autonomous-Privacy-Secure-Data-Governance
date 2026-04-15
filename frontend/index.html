@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SilentSeal Enhanced | Privacy Intelligence Platform</title>
+    <meta name="description"
+        content="Automated data anonymization and redaction platform with advanced privacy features">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/audit.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="logo">
+                <div class="logo-icon">🔒</div>
+                <span class="logo-text">SilentSeal</span>
+                <span class="logo-badge">Enhanced</span>
+            </div>
+
+            <nav class="nav-menu">
+                <a href="#" class="nav-item active" data-page="dashboard">
+                    <span class="nav-icon">📊</span>
+                    <span>Dashboard</span>
+                </a>
+                <a href="#" class="nav-item" data-page="upload">
+                    <span class="nav-icon">📤</span>
+                    <span>Upload</span>
+                </a>
+                <a href="#" class="nav-item" data-page="standby">
+                    <span class="nav-icon">👁️</span>
+                    <span>Standby Mode</span>
+                </a>
+                <a href="#" class="nav-item" data-page="scanner">
+                    <span class="nav-icon">🔍</span>
+                    <span>System Scan</span>
+                </a>
+                <a href="#" class="nav-item" data-page="vault">
+                    <span class="nav-icon">🔐</span>
+                    <span>Secure Vault</span>
+                </a>
+                <a href="#" class="nav-item" data-page="documents">
+                    <span class="nav-icon">📁</span>
+                    <span>Documents</span>
+                </a>
+                <a href="#" class="nav-item" data-page="analytics">
+                    <span class="nav-icon">📈</span>
+                    <span>Privacy Analytics</span>
+                </a>
+                <a href="#" class="nav-item" data-page="linkage">
+                    <span class="nav-icon">🔗</span>
+                    <span>Linkage Check</span>
+                </a>
+                <a href="#" class="nav-item" data-page="audit">
+                    <span class="nav-icon">📋</span>
+                    <span>Audit Log</span>
+                </a>
+                <a href="#" class="nav-item" data-page="compliance">
+                    <span class="nav-icon">⚖️</span>
+                    <span>Compliance</span>
+                </a>
+                <a href="#" class="nav-item" data-page="observability">
+                    <span class="nav-icon">🖥️</span>
+                    <span>Observability</span>
+                </a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <div class="feature-badges">
+                    <span class="badge badge-new">20+ Features</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="header">
+                <div class="header-title">
+                    <h1>Privacy Intelligence Platform</h1>
+                    <p class="subtitle">Automated Data Anonymization & Advanced Privacy Engineering</p>
+                </div>
+                <div class="header-actions">
+                    <div class="status-indicator">
+                        <span class="status-dot"></span>
+                        <span>System Ready</span>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Dashboard Page -->
+            <section id="page-dashboard" class="page active">
+                <!-- Stats Cards -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">📄</div>
+                        <div class="stat-info">
+                            <span class="stat-value" id="stat-documents">0</span>
+                            <span class="stat-label">Documents Processed</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">🎯</div>
+                        <div class="stat-info">
+                            <span class="stat-value" id="stat-entities">0</span>
+                            <span class="stat-label">Entities Detected</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">🛡️</div>
+                        <div class="stat-info">
+                            <span class="stat-value" id="stat-redacted">0</span>
+                            <span class="stat-label">Redactions Applied</span>
+                        </div>
+                    </div>
+                    <div class="stat-card accent">
+                        <div class="stat-icon">⚡</div>
+                        <div class="stat-info">
+                            <span class="stat-value">98.5%</span>
+                            <span class="stat-label">Detection Accuracy</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Novel Features Grid -->
+                <h2 class="section-title">Novel Features</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-header">
+                            <span class="feature-icon">📊</span>
+                            <span class="feature-badge">Novel</span>
+                        </div>
+                        <h3>Re-identification Risk Score</h3>
+                        <p>Calculate privacy risk based on quasi-identifiers and k-anonymity analysis</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-header">
+                            <span class="feature-icon">🎭</span>
+                            <span class="feature-badge">Novel</span>
+                        </div>
+                        <h3>Synthetic Data Generation</h3>
+                        <p>Replace sensitive data with realistic Indian names, numbers, and identifiers</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-header">
+                            <span class="feature-icon">💡</span>
+                            <span class="feature-badge">Novel</span>
+                        </div>
+                        <h3>Explainable AI</h3>
+                        <p>Human-readable explanations for every redaction decision</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-header">
+                            <span class="feature-icon">🛡️</span>
+                            <span class="feature-badge">Novel</span>
+                        </div>
+                        <h3>Adversarial Testing</h3>
+                        <p>Simulate attacks to verify redaction robustness</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-header">
+                            <span class="feature-icon">🔗</span>
+                            <span class="feature-badge">Novel</span>
+                        </div>
+                        <h3>Cross-Document Linkage</h3>
+                        <p>Detect re-identification risks across multiple documents</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-header">
+                            <span class="feature-icon">✍️</span>
+                            <span class="feature-badge">Novel</span>
+                        </div>
+                        <h3>Handwriting OCR</h3>
+                        <p>Process handwritten documents with signature detection</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-header">
+                            <span class="feature-icon">🔐</span>
+                            <span class="feature-badge">Novel</span>
+                        </div>
+                        <h3>Privacy Analytics</h3>
+                        <p>Query data with differential privacy protection</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Upload Page -->
+            <section id="page-upload" class="page">
+                <div class="upload-container">
+                    <div class="upload-zone" id="upload-zone">
+                        <div class="upload-icon">📄</div>
+                        <h3>Drop your document here</h3>
+                        <p>or click to browse</p>
+                        <p class="upload-hint">Supports PDF, PNG, JPG, TIFF</p>
+                        <input type="file" id="file-input" accept=".pdf,.png,.jpg,.jpeg,.tiff" hidden>
+                    </div>
+
+                    <!-- Processing Options -->
+                    <div class="options-panel">
+                        <h3>Processing Options</h3>
+                        <div class="option-group">
+                            <label class="toggle-option">
+                                <input type="checkbox" id="opt-synthetic" checked>
+                                <span class="toggle-slider"></span>
+                                <span>Use Synthetic Replacement</span>
+                            </label>
+                            <label class="toggle-option">
+                                <input type="checkbox" id="opt-explanations" checked>
+                                <span class="toggle-slider"></span>
+                                <span>Generate AI Explanations</span>
+                            </label>
+                            <label class="toggle-option">
+                                <input type="checkbox" id="opt-adversarial">
+                                <span class="toggle-slider"></span>
+                                <span>Run Adversarial Test</span>
+                            </label>
+                            <label class="toggle-option">
+                                <input type="checkbox" id="opt-handwriting" checked>
+                                <span class="toggle-slider"></span>
+                                <span>Enable Handwriting OCR</span>
+                            </label>
+                            <label class="toggle-option">
+                                <input type="checkbox" id="opt-strict">
+                                <span class="toggle-slider"></span>
+                                <span>Strict PII Validation</span>
+                            </label>
+                        </div>
+
+                        <!-- Novel Feature: Semantic Redaction -->
+                        <div class="semantic-option"
+                            style="margin-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 16px;">
+                            <div class="feature-header" style="margin-bottom: 8px;">
+                                <span class="feature-icon" style="font-size: 18px;">🧠</span>
+                                <span class="feature-badge" style="font-size: 10px;">Novel</span>
+                                <span style="font-size: 14px; font-weight: 600; margin-left: 8px;">Semantic
+                                    Redaction</span>
+                            </div>
+                            <input type="text" id="opt-semantic-query" class="query-input"
+                                placeholder='e.g., "Redact all medical diagnoses" or "Remove negative feedback"'
+                                style="margin-top: 8px;">
+                            <p style="font-size: 11px; color: var(--text-muted); margin-top: 4px;">Uses AI to redact
+                                concepts matching your query.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Processing Results -->
+                <div id="processing-results" class="results-container hidden">
+                    <div class="results-header">
+                        <h2>Processing Results</h2>
+                        <div class="results-actions">
+                            <button class="btn btn-primary" id="btn-download">
+                                <span>📥</span> Download Redacted
+                            </button>
+                            <button class="btn btn-secondary" id="btn-report">
+                                <span>📋</span> View Report
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Risk Score Display -->
+                    <div class="risk-display">
+                        <div class="risk-gauge">
+                            <svg viewBox="0 0 200 100">
+                                <path class="risk-bg" d="M 20 90 A 80 80 0 0 1 180 90" fill="none" stroke="#2a2a3e"
+                                    stroke-width="15" />
+                                <path class="risk-value" id="risk-arc" d="M 20 90 A 80 80 0 0 1 180 90" fill="none"
+                                    stroke="url(#riskGradient)" stroke-width="15" stroke-dasharray="251"
+                                    stroke-dashoffset="251" />
+                                <defs>
+                                    <linearGradient id="riskGradient" x1="0%" y1="0%" x2="100%">
+                                        <stop offset="0%" style="stop-color:#00ff88" />
+                                        <stop offset="50%" style="stop-color:#ffaa00" />
+                                        <stop offset="100%" style="stop-color:#ff4444" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <div class="risk-score-text">
+                                <span class="risk-value-num" id="risk-score">0</span>
+                                <span class="risk-label">Risk Score</span>
+                            </div>
+                        </div>
+                        <div class="risk-details">
+                            <div class="risk-stat">
+                                <span class="risk-stat-label">K-Anonymity</span>
+                                <span class="risk-stat-value" id="k-value">∞</span>
+                            </div>
+                            <div class="risk-stat">
+                                <span class="risk-stat-label">Risk Level</span>
+                                <span class="risk-stat-value risk-level" id="risk-level">-</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Entities Found -->
+                    <div class="entities-panel">
+                        <h3>Detected Entities</h3>
+                        <div class="entities-list" id="entities-list">
+                            <!-- Populated by JS -->
+                        </div>
+                    </div>
+
+                    <!-- Explanations Panel -->
+                    <div class="explanations-panel" id="explanations-panel">
+                        <h3>AI Explanations</h3>
+                        <div class="explanations-list" id="explanations-list">
+                            <!-- Populated by JS -->
+                        </div>
+                    </div>
+
+                    <!-- Adversarial Analysis Panel (NEW) -->
+                    <div class="adversarial-panel hidden" id="adversarial-panel"
+                        style="margin-top: 24px; padding: 20px; background: rgba(239, 68, 68, 0.05); border: 1px solid rgba(239, 68, 68, 0.1); border-radius: 12px;">
+                        <div
+                            style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                            <h3 style="margin: 0; color: #ef4444; display: flex; align-items: center; gap: 8px;">
+                                🛡️ Adversarial Robustness Report
+                            </h3>
+                            <div id="robustness-grade"
+                                style="font-size: 24px; font-weight: 800; padding: 4px 12px; border-radius: 8px; background: #ef4444; color: white;">
+                                A</div>
+                        </div>
+
+                        <div
+                            style="background: rgba(0,0,0,0.2); padding: 15px; border-radius: 8px; margin-bottom: 15px;">
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                                <span>Robustness Score</span>
+                                <span id="robustness-score">0%</span>
+                            </div>
+                            <div
+                                style="height: 6px; background: rgba(255,255,255,0.1); border-radius: 3px; overflow: hidden;">
+                                <div id="robustness-bar" style="height: 100%; background: #ef4444; width: 0%;"></div>
+                            </div>
+                        </div>
+
+                        <div id="adversarial-vulnerabilities" style="font-size: 13px; line-height: 1.5;">
+                            <!-- Populated by JS -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Analytics Page -->
+            <section id="page-analytics" class="page">
+                <div class="analytics-container">
+                    <div class="analytics-header">
+                        <h2>Privacy-Preserving Analytics</h2>
+                        <p>Query your data with differential privacy protection</p>
+                    </div>
+
+                    <div class="budget-display">
+                        <div class="budget-bar">
+                            <div class="budget-fill" id="budget-fill" style="width: 100%"></div>
+                        </div>
+                        <div class="budget-text">
+                            <span>Privacy Budget: </span>
+                            <span id="budget-remaining">10.0</span> / 10.0
+                        </div>
+                    </div>
+
+                    <div class="query-panel">
+                        <h3>Query Data</h3>
+                        <div class="query-input-group">
+                            <input type="text" id="query-input" placeholder="e.g., How many entities of type EMAIL?"
+                                class="query-input">
+                            <div class="epsilon-control">
+                                <label>ε (privacy):</label>
+                                <input type="range" id="epsilon-slider" min="0.1" max="2" step="0.1" value="1">
+                                <span id="epsilon-value">1.0</span>
+                            </div>
+                            <button class="btn btn-primary" id="btn-query">Execute Query</button>
+                        </div>
+                        <div class="query-result" id="query-result">
+                            <!-- Query results appear here -->
+                        </div>
+                    </div>
+
+                    <div class="dp-explainer">
+                        <h3>What is Differential Privacy?</h3>
+                        <div class="explainer-content">
+                            <p><strong>Differential Privacy</strong> is a mathematical framework that ensures individual
+                                records cannot be identified from query results.</p>
+                            <p><strong>Epsilon (ε)</strong> controls privacy-utility tradeoff. Lower ε = more privacy,
+                                more noise.</p>
+                            <p><strong>Budget</strong> limits total information leakage. Each query consumes budget.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Linkage Check Page -->
+            <section id="page-linkage" class="page">
+                <div class="linkage-container">
+                    <h2>Cross-Document Linkage Detection</h2>
+                    <p>Detect if multiple documents together can re-identify individuals</p>
+
+                    <div class="linkage-upload-zone">
+                        <div class="multi-upload" id="multi-upload-zone">
+                            <span class="upload-icon">📚</span>
+                            <p>Drop multiple documents to check for linkage</p>
+                        </div>
+                        <input type="file" id="multi-file-input" accept=".pdf,.png,.jpg,.jpeg" multiple hidden>
+                    </div>
+
+                    <div id="linkage-results" class="linkage-results hidden">
+                        <div class="linkage-summary">
+                            <div class="linkage-score">
+                                <span class="linkage-value" id="linkage-risk">0%</span>
+                                <span class="linkage-label">Combined Risk</span>
+                            </div>
+                        </div>
+                        <div class="linkage-details" id="linkage-details">
+                            <!-- Populated by JS -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Audit Log Page -->
+            <section id="page-audit" class="page">
+                <div class="audit-container">
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px;">
+                        <div>
+                            <h2>Audit Log</h2>
+                            <p style="color: var(--text-secondary);">Complete trail of all document processing
+                                activities</p>
+                        </div>
+                        <button class="btn btn-outline" style="border-color: #ef4444; color: #ef4444;"
+                            onclick="app.clearAuditLogs()">🗑️ Clear Audit Trail</button>
+                    </div>
+
+                    <div class="audit-list" id="audit-log-container">
+                        <!-- Populated by JS -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Documents Page -->
+            <section id="page-documents" class="page">
+                <div class="documents-container">
+                    <h2>Processed Documents</h2>
+                    <div class="documents-grid" id="documents-grid">
+                        <!-- Populated by JS -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Standby Mode Page -->
+            <section id="page-standby" class="page">
+                <div class="standby-container">
+                    <div class="page-header">
+                        <h2>👁️ Standby Mode</h2>
+                        <p>Real-time file monitoring with automatic PII detection</p>
+                    </div>
+
+                    <div class="standby-controls">
+                        <div class="standby-status-card">
+                            <div class="status-indicator-large">
+                                <span class="status-dot" id="watcher-status-dot">●</span>
+                                <span id="watcher-status-text">Stopped</span>
+                            </div>
+                            <div class="standby-actions">
+                                <button class="btn btn-primary" id="btn-start-watcher">▶️ Start Monitoring</button>
+                                <button class="btn btn-secondary" id="btn-stop-watcher" disabled>⏹️ Stop</button>
+                            </div>
+                        </div>
+
+                        <div class="watch-paths-card">
+                            <h3>Monitored Folders</h3>
+                            <div class="paths-list" id="watch-paths-list">
+                                <!-- Dynamically populated -->
+                            </div>
+                            <div style="margin-top: 12px;">
+                                <input type="text" id="new-folder-path"
+                                    placeholder="Enter folder path (e.g., C:\Users\YourName\Desktop)"
+                                    style="width: 100%; padding: 8px; border: 1px solid rgba(255,255,255,0.1); background: var(--bg-secondary); color: var(--text-primary); border-radius: 8px; margin-bottom: 8px;">
+                                <button class="btn btn-outline" id="btn-add-path" style="width: 100%;">+ Add
+                                    Folder</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="recent-detections">
+                        <h3>Recent Detections</h3>
+                        <div id="standby-detections" class="detections-list">
+                            <p class="empty-state">No sensitive files detected yet</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- System Scanner Page -->
+            <section id="page-scanner" class="page">
+                <div class="scanner-container">
+                    <div class="page-header">
+                        <h2>🔍 Full System Scan</h2>
+                        <p>Deep scan of your files to build a complete data inventory</p>
+                    </div>
+
+                    <div class="scan-controls">
+                        <div class="scan-config">
+                            <h3>Scan Configuration</h3>
+                            <div class="scan-folders-list" id="scan-folders-list">
+                                <!-- Dynamically populated -->
+                            </div>
+                            <div style="margin-top: 12px;">
+                                <input type="text" id="scan-folder-path"
+                                    placeholder="Enter folder path to scan (e.g., C:\Users\YourName\Desktop)"
+                                    style="width: 100%; padding: 8px; border: 1px solid rgba(255,255,255,0.1); background: var(--bg-secondary); color: var(--text-primary); border-radius: 8px; margin-bottom: 8px;">
+                                <button class="btn btn-outline" id="btn-add-scan-folder"
+                                    style="width: 100%; margin-bottom: 8px;">+ Add Folder to Scan</button>
+                                <button class="btn btn-secondary" id="btn-clear-results"
+                                    style="width: 100%; margin-bottom: 12px; background: rgba(255,107,107,0.1); color: #ff6b6b; border: 1px solid rgba(255,107,107,0.3);">🗑️
+                                    Clear Previous Results</button>
+                            </div>
+                            <button class="btn btn-primary" id="btn-start-scan" style="width: 100%;">🔍 Start System
+                                Scan</button>
+                        </div>
+
+                        <div class="scan-progress-card">
+                            <h3>Scan Progress</h3>
+                            <div class="progress-bar">
+                                <div class="progress-fill" id="scan-progress-fill" style="width: 0%"></div>
+                            </div>
+                            <div class="progress-stats">
+                                <span id="scan-files-count">0</span> files scanned
+                                <span class="separator">|</span>
+                                <span id="scan-pii-count">0</span> with PII
+                            </div>
+                            <p class="current-file" id="scan-current-file">Ready to scan</p>
+                            <div class="scan-actions">
+                                <button class="btn btn-secondary" id="btn-pause-scan" disabled>⏸️ Pause</button>
+                                <button class="btn btn-danger" id="btn-cancel-scan" disabled>✖️ Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Risk Buckets Dashboard -->
+                    <div class="risk-dashboard">
+                        <h3>Risk Overview</h3>
+                        <div class="risk-buckets">
+                            <div class="bucket-card high-risk">
+                                <span class="bucket-icon">🔴</span>
+                                <span class="bucket-count" id="high-risk-count">0</span>
+                                <span class="bucket-label">High Risk</span>
+                            </div>
+                            <div class="bucket-card medium-risk">
+                                <span class="bucket-icon">🟡</span>
+                                <span class="bucket-count" id="medium-risk-count">0</span>
+                                <span class="bucket-label">Medium Risk</span>
+                            </div>
+                            <div class="bucket-card low-risk">
+                                <span class="bucket-icon">🟢</span>
+                                <span class="bucket-count" id="low-risk-count">0</span>
+                                <span class="bucket-label">Low Risk</span>
+                            </div>
+                        </div>
+
+                        <div class="high-risk-files">
+                            <h4>⚠️ Files Requiring Attention</h4>
+                            <div id="high-risk-files-list" class="files-list">
+                                <p class="empty-state">No high-risk files found</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recent Detections -->
+                    <div class="card" style="margin-top: 24px;">
+                        <h2>📋 Recent Detections</h2>
+                        <div id="recent-detections-list" class="detections-list">
+                            <p class="empty-state">No detections yet. Files will appear here when PII is detected.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Secure Vault Page -->
+            <section id="page-vault" class="page">
+                <div class="vault-container">
+                    <div class="page-header">
+                        <h2>🔐 Secure Vault</h2>
+                        <p>AES-256 encrypted storage for your sensitive files</p>
+                    </div>
+
+                    <div class="vault-management"
+                        style="margin-bottom: 24px; padding: 16px; background: rgba(255,255,255,0.03); border-radius: 12px; border: 1px solid rgba(255,255,255,0.05); display: flex; justify-content: space-between; align-items: center;">
+                        <div style="display: flex; align-items: center; gap: 12px;">
+                            <span style="color: var(--text-muted); font-size: 14px;">📦 Active Unit:</span>
+                            <strong id="current-vault-name" style="color: var(--accent-primary);">default</strong>
+                            <select id="vault-selector"
+                                style="background: rgba(0,0,0,0.3); color: white; border: 1px solid rgba(255,255,255,0.1); padding: 4px 8px; border-radius: 6px; font-size: 13px; cursor: pointer;">
+                                <option value="default">default</option>
+                            </select>
+                        </div>
+                        <button class="btn btn-outline btn-sm" id="btn-new-vault"
+                            style="padding: 6px 12px; font-size: 12px;">+ New Unit</button>
+                    </div>
+
+                    <div class="vault-status" id="vault-locked-view">
+                        <div class="vault-icon">🔒</div>
+                        <h3>Vault is Locked</h3>
+                        <div class="vault-input-group">
+                            <input type="password" id="vault-password" placeholder="Enter master password">
+                            <button class="btn btn-primary" id="btn-unlock-vault">Unlock</button>
+                        </div>
+                        <p class="vault-hint">Or <a href="#" id="btn-init-vault">initialize new vault</a></p>
+                    </div>
+
+                    <div class="vault-unlocked hidden" id="vault-unlocked-view">
+                        <div class="vault-header">
+                            <div class="vault-info">
+                                <span class="vault-icon-small">🔓</span>
+                                <span>Vault Unlocked</span>
+                            </div>
+                            <button class="btn btn-secondary" id="btn-lock-vault">🔒 Lock Vault</button>
+                        </div>
+
+                        <div class="vault-actions">
+                            <div class="vault-upload-zone" id="vault-upload-zone">
+                                <span>📄 Drop files to encrypt and add to vault</span>
+                            </div>
+                            <input type="file" id="vault-file-input" hidden>
+                        </div>
+
+                        <div class="vault-files">
+                            <h3>Encrypted Files</h3>
+                            <div id="vault-files-list" class="files-list">
+                                <p class="empty-state">No files in vault</p>
+                            </div>
+                        </div>
+
+                        <div class="vault-sharing">
+                            <h3>🔑 Key Management</h3>
+                            <button class="btn btn-outline" id="btn-export-public-key">Export Public Key</button>
+                            <button class="btn btn-outline" id="btn-import-key">Import Recipient Key</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Compliance Page -->
+            <section id="page-compliance" class="page">
+                <div class="page-container" style="padding: 24px;">
+                    <h2>⚖️ Compliance Center</h2>
+                    <p style="color: var(--text-secondary); margin-bottom: 24px;">Generate legal-ready reports (GDPR,
+                        CCPA,
+                        HIPAA)</p>
+                    <div id="compliance-templates-list"
+                        style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px;">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Observability Page -->
+            <section id="page-observability" class="page">
+                <div class="page-container" style="padding: 24px;">
+                    <h2>🖥️ System Observability</h2>
+                    <p style="color: var(--text-secondary); margin-bottom: 24px;">Monitor system health and SLO status
+                    </p>
+                    <div id="observability-dashboard"></div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loading-overlay">
+        <div class="loader">
+            <div class="loader-spinner"></div>
+            <p id="loading-text">Processing document...</p>
+        </div>
+    </div>
+
+    <!-- Modal for Explanations -->
+    <div class="modal" id="explanation-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Redaction Explanation</h3>
+                <button class="modal-close" id="modal-close">&times;</button>
+            </div>
+            <div class="modal-body" id="modal-body">
+                <!-- Populated by JS -->
+            </div>
+            <div id="preview-container" class="preview-iframe-wrapper hidden"
+                style="padding: 20px; border-top: 1px solid rgba(255,255,255,0.1); height: 600px; display: flex; flex-direction: column;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                    <h4 style="margin: 0;">📄 Live Preview</h4>
+                    <span id="preview-info" style="font-size: 11px; color: var(--text-muted);"></span>
+                </div>
+                <object id="preview-object" type="application/pdf"
+                    style="width: 100%; flex: 1; border: none; border-radius: 8px; background: white;">
+                    <p style="color: black; padding: 20px;">Unable to display PDF. <a id="preview-fallback-link"
+                            href="#" target="_blank"
+                            style="color: var(--accent-primary); text-decoration: underline;">Download to view</a></p>
+                </object>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>

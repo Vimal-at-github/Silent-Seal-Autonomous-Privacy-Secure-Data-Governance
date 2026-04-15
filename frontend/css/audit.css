@@ -1,0 +1,63 @@
+/* Audit Log Table Styles */
+.audit-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: rgba(17, 24, 39, 0.4);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.audit-table th {
+    background: rgba(99, 102, 241, 0.1);
+    color: #e5e7eb;
+    text-align: left;
+    padding: 16px;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-bottom: 2px solid rgba(99, 102, 241, 0.2);
+}
+
+.audit-table td {
+    padding: 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    color: #9ca3af;
+    font-size: 14px;
+}
+
+.audit-table tr:last-child td {
+    border-bottom: none;
+}
+
+.audit-table tr:hover td {
+    background: rgba(255, 255, 255, 0.02);
+    color: #f3f4f6;
+}
+
+.audit-container {
+    padding: 20px;
+}
+
+.loading-spinner {
+    border: 3px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    border-top: 3px solid #6366f1;
+    width: 24px;
+    height: 24px;
+    animation: spin 1s linear infinite;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

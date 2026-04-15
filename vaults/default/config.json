@@ -1,0 +1,8 @@
+{
+  "version": "1.0",
+  "created": "2026-02-10T13:14:18.078964+00:00",
+  "password_salt": "c0a96f5f55e78a5e0f2cae1d79c3ae0f",
+  "password_hash": "27130e2a1971827ec049ecb15a76615563f1aa64d88813f7f00708a4005a9918",
+  "key_algorithm": "RSA-4096",
+  "encryption_algorithm": "AES-256-GCM"
+}

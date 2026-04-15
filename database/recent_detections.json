@@ -1,0 +1,24 @@
+[
+  {
+    "file_path": "C:\\Users\\souri\\Downloads\\sample_pii_test (2).pdf",
+    "file_name": "sample_pii_test (2).pdf",
+    "timestamp": 1770708083.9494812,
+    "risk_level": "MEDIUM",
+    "risk_score": 45,
+    "entities_count": 3,
+    "entities": [
+      {
+        "type": "EMAIL",
+        "value": "sujay.test@gmail.com"
+      },
+      {
+        "type": "AADHAAR",
+        "value": "1234 5678 9012"
+      },
+      {
+        "type": "PAN",
+        "value": "ABCDE1234F"
+      }
+    ]
+  }
+]
